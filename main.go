@@ -18,4 +18,7 @@ func main() {
 
 	data = []int{1, -2, 3, 4, -4, 6, -14, 8, 2}
 	fmt.Println("Max sub array sum: ", util.MaxSubArraySum(data))
+
+	//factorial algo
+	fmt.Println("Factorial 5 is::", util.Factorial(5))
 }

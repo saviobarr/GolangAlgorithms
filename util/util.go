@@ -86,3 +86,13 @@ func MaxSubArraySum(data []int) int {
 	}
 	return maxSoFar
 }
+
+//Factorial calculates Factorials: N! = N* (N-1). It is a good example of recursive calls
+func Factorial(i int) int {
+	//Terminal condition
+	if i <= 1 {
+		return 1
+	}
+	//Body, Recursive Expanstion
+	return i * Factorial(i-1)
+}
