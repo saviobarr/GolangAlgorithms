@@ -22,3 +22,13 @@ func main() {
 	//factorial algo
 	fmt.Println("Factorial 5 is::", util.Factorial(5))
 }
+
+//TOHUtil performs a Hanoi Tower algorith
+func TOHUtil(num int, from string, to string, temp string) {
+	if num < 1 {
+		return
+	}
+	TOHUtil(num-1, from, temp, to)
+	fmt.Println("Move disk", num, "from peg", from, "to peg", to)
+	TOHUtil(num-1, temp, to, from)
+}
