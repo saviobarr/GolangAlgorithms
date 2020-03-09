@@ -1,5 +1,7 @@
 package util
 
+import "fmt"
+
 // SumArray returns the sum of all elements in a int array
 func SumArray(data []int) int {
 	size := len(data)
@@ -95,4 +97,14 @@ func Factorial(i int) int {
 	}
 	//Body, Recursive Expanstion
 	return i * Factorial(i-1)
+}
+
+//TOHUtil performs a Hanoi Tower algorith
+func TOHUtil(num int, from string, to string, temp string) {
+	if num < 1 {
+		return
+	}
+	TOHUtil(num-1, from, temp, to)
+	fmt.Println("Move disk", num, "from peg", from, "to peg", to)
+	TOHUtil(num-1, temp, to, from)
 }
