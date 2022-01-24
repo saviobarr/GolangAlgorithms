@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/saviobarr/book_ds_and_algos_in_go/util"
+	"github.com/saviobarr/GolangAlgorithms/util"
 )
 
 func main() {
